@@ -67,7 +67,7 @@ function check() {
 
     for(var i = 0; i < anss.length; i++) {
         if (m[i] != anss[i]) {
-           anss[i].style.color = 'red';
+           anss[i].style.color = 'white';
            if(see) see = false;
         } else {
             anss[i].style.color = 'green';
