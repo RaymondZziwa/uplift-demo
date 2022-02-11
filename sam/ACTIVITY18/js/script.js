@@ -10,7 +10,7 @@ $(document).ready(function(){
       $('#body_background').attr("src", "img/body2.png");
       $('#Btn1').css({"display": "none"});
       $('#Btn2').css({"display": "block"});
-      $('#false_button2').click(function(){
+      $('#true_button2').click(function(){
         $('#excellent_img').css({"visibility" : "visible"});
         $('#excellent_img').attr("src", "img/PNGS_0000s_0000s_0000_excellent.png");
         $('#excellent_img').show(1).delay(800).hide(1);
