@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <style>
+        html,body{
+            margin: 0 auto;
+            background-image: linear-gradient(#00ccfb,rgb(41, 60, 223));
+            background-repeat: no-repeat;
+            font-family: comic-sans;
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+            height: 630px;
+            width: 980px;
+            overflow-y: hidden;
+            font-size: 1.2rem;
+        }
+        #option2:hover{
+            background-image: linear-gradient(#61686b,#61686b);
+        }
+        #option1:hover{
+            background-image: linear-gradient(#61686b,#61686b);
+        }
+        .review,.Tryagain,.proceed{
+            background-color:#e8e2b3;
+            border-radius:25px;
+            font-size: 0.7rem;
+            color: white;
+            text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+            border-top:1px;
+            border-bottom: 1px;
+            border-style: solid;
+            border-color: #938659;
+            visibility: hidden;
+        }
+        .answerC,.answerK{
+            text-align:center;
+            background-image: linear-gradient(#cad8d5,#535351);
+            font-size: 1rem;
+            color: black;
+            border-radius: 10px;
+            border-bottom: 2px solid #61686b;
+            /*box-shadow:-3.5px 0px 2px 2px #283090;*/
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+        table{
+            border-spacing: 0;
+        }
+        table td {
+            padding: 2px;
+            border: 2px solid black;
+        }
+        table th {
+            padding: 2px;
+            border: 2px solid black;
+        }
+        .CtoK, .KtoC{
+           /* border-collapse: separate;*/
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .review,.Tryagain,.proceed{
+            background-color:#e8e2b3;
+            border-radius:25px;
+            font-size:0.7rem;
+            color: white;
+            text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+            border-top:1px;
+            border-bottom: 1px;
+            border-style: solid;
+            display: none;
+            border-color: #938659;
+        }
+        #imgstatus1,#imgstatus2,#imgstatus3,#imgstatus4{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+            <div class="row" id="qtn" style="padding-top:30px;width: 100%;height: 80px;justify-content: center;margin-left: 10px;margin-top: 10px;background-image: url(imgs/Activity-9_0000s_0006s_0001_Background-copy-3.png);background-repeat: no-repeat;background-size:contain;font-size: 1.8rem;">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    FILL IN THE GAPS IN THE TABLE BELOW
+                </div>
+            </div>
+            <div class="row" style="margin-top: 6px;margin-left: 10px;">
+                <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                    <table style="width: 100%;height: 160px;text-align: center;font-weight:bold" class="KtoC">
+                        <thead>
+                          <tr>
+                            <th scope="col">Temperature(°C)</th>
+                            <th scope="col">Temperature(°K)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>0</td>
+                            <td>
+                                273
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>53</td>
+                            <td><input type="number"  class="answerK" id="text1" onchange="myFunc()">
+                                    <img src="imgs/Activity-9_0000s_0004s_0000s_0000_excellent.png" height="30px" id="imgstatus1">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <input type="number"  class="answerK" id="text2" onchange="myFunc()">
+                                <img src="imgs/Activity-9_0000s_0004s_0000s_0000_excellent.png" height="30px" id="imgstatus2">
+                            </td>
+                            <td>
+                                350
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <input type="number"  class="answerK" id="text3" onchange="myFunc()">
+                                <img src="imgs/Activity-9_0000s_0004s_0000s_0000_excellent.png" height="30px" id="imgstatus3">
+                            </td>
+                            <td>370
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>27</td>
+                            <td><input type="number"  class="answerK" id="text4" onchange="myFunc()">
+                                    <img src="imgs/Activity-9_0000s_0004s_0000s_0000_excellent.png" height="30px" id="imgstatus4">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>100</td>
+                            <td>300
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+ 
+            
+            <div class="row" style="justify-content: right;margin-top: 4px;">
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <img src="imgs/check_0000_dup.png" height="40px" alt="check" id="check" onclick="check()" style="cursor: pointer;">
+                </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

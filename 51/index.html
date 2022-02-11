@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <style>
+         html,body{
+            margin: 0 auto;
+            background-image: linear-gradient(#50aebe,#d7ecf0);
+            background-repeat: no-repeat;
+            font-family: comic-sans;
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+            height: 630px;
+            max-width: 980px;
+            overflow-y: hidden;
+            font-size: 1.2rem;
+            overflow-x: hidden;
+        }
+        /* #input1{
+            width: 750px;
+            border-radius:20px;
+            background-color: #d2d2d2;
+            box-shadow:-3.5px 0px 2px 2px #c9c3b7;
+            border:none;
+            outline: none;
+            height:150px;
+        } */
+        .createdimg{
+            height: 350px;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" style="height: 400px;margin: 10px;margin-left: 20px;background-image: url(imgs/qtn.png);background-size: contain;background-repeat: no-repeat;">
+            <p id="qtntext" style="height: 220px;width: 230px;margin-top: 150px;"></p>
+        </div>
+        <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2" style="height: 400px;margin: 10px;margin-left: 20px;background-size: contain;background-repeat: no-repeat;" id="home"> 
+            <img src="imgs/1.png" id="dragitem" height="200px" width="100px" draggable="true" ondragstart="drag(event)" style="cursor:grab" >
+        </div>
+
+        <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5" style="height: 400px;margin: 10px;margin-left: 10px;background-size: contain;background-repeat: no-repeat;background-color: white;opacity: 70%;" ondrop="drop(event)" ondragover="ondragOver(event)" id="lab"> 
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-5 col-lg-5 col-xl-4" style="height: 100px;margin: 10px;margin-left: 20px;">
+            <input type="number" id="input1" placeholder="Length of the mercury line at the temperature of tested heat source"><br>
+            ____________________________<br>
+            <input type="number" id="input2" placeholder="length of mercury line at 100C">
+        </div>
+        <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7" style="margin-top: 50px;">
+            *100 = <input type="number" id="input3">
+            <img src="imgs/check.png" height="50px" style="cursor: pointer;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
