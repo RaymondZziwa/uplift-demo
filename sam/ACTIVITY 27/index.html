@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Physics | Activity 27</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+
+</head>
+<style>
+
+body, html{
+  margin:0 auto;
+  background: linear-gradient( #00d4fc, #002ae1);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 630px;
+  max-width: 980px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+
+}
+
+ul{
+  list-style: none;
+  display: inline-flex;
+}
+
+</style>
+
+
+<body>
+  <div class="Main_content">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <center>
+          <img src="img/questionCool.png" alt="header" style="width: 800px;">
+        </center>
+      </div>
+    </div>
+
+
+
+
+    <!---***************Trigger a given div to be displayed with its corresponding button*******************************************************-->
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+        <center>
+          <img src="img/catapult.png" id="body_background" alt="body" style="width: 700px; border-radius: 10px; margin-top: 30px;">
+        </center>
+      </div>
+
+
+    <!---##############Trigger the corresponding buttons to be shown################################################################-->
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="Btn1" style="margin-top: 20px;">
+
+        <center>
+          <ul>
+            <li>
+              <div id="box" style="width: 600px;  background-color: #ddd; height: 70px; margin-left: 80px;  border-radius: 3px;" > </div>
+              <div id="box2" style="width: 600px;  background-color: #ddd; height: 70px; margin-left: 80px;  border-radius: 3px; display: none;" > </div>
+              <div id="box3" style="width: 600px;  background-color: #ddd; height: 70px; margin-left: 80px;  border-radius: 3px; display: none;" > </div>
+              <div id="box4" style="width: 600px;  background-color: #ddd; height: 70px; margin-left: 80px;  border-radius: 3px; display: none;" > </div>
+            </li>
+
+            <li>
+              <button type="button" id="check_button" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px;">
+                <img src="img/check_btn.png" alt="false_btn" style="width: 130px;">
+              </button>
+
+              <button type="button" id="check_button2" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px; display: none;">
+                <img src="img/check_btn.png" alt="false_btn" style="width: 130px;">
+              </button>
+
+              <button type="button" id="check_button3" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px; display: none;">
+                <img src="img/check_btn.png" alt="false_btn" style="width: 130px;">
+              </button>
+
+              <button type="button" id="check_button4" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px; display: none;">
+                <img src="img/check_btn.png" alt="false_btn" style="width: 130px;">
+              </button>
+            </li>
+
+            <ul>
+            </center>
+          </div>
+
+
+
+          <!---------------------------Drag items 1------------------------------------->
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="dragItems1" style="display: inline-flex; margin-left: 10px; margin-right: 10px; width : 800px;">
+
+                 <div class="item" id="item1.1" draggable="true"  >
+                    <img src="img/tension_force.png" alt="" width="110">
+                  </div>
+
+                  <div class="item" id="item2.1" draggable="true" >
+                    <img src="img/friction_force.png" alt="" width="110">
+                  </div>
+
+                  <div class="item" id="item3.1" draggable="true" >
+                    <img src="img/magnetic_force.png" alt="" width="110">
+                  </div>
+
+                  <div class="item" id="item4.1" draggable="true" >
+                    <img src="img/centripetal_forcw.png" alt="" width="110">
+                  </div>
+
+                  <div class="item" id="item5.1" draggable="true" >
+                    <img src="img/surface_tension.png" alt="" width="110">
+                  </div>
+
+                  <div class="item" id="item6.1" draggable="true" >
+                    <img src="img/electrostatic_force.png" alt="" width="110">
+                  </div>
+
+                  <div class="item" id="item7.1"draggable="true" >
+                    <img src="img/bouyant_force.png" alt="" width="110">
+                  </div>
+
+                  <div class="item" id="item8.1" draggable="true" >
+                    <img src="img/nuclear_force.png" alt="" width="110">
+                  </div>
+
+
+                  <div class="item" id="item9.1" draggable="true" >
+                    <img src="img/gravitational_force.png" alt="" width="110">
+                  </div>
+
+
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="dragItems2" style="display: inline-flex; margin-left: 10px; margin-right: 10px; width : 800px; position: relative; top: 80px;"></div>
+
+
+
+                            </div>
+                            <!--#########################################################################################################--->
+                            <!---**********************This is where we display the button results **************************************--->
+                            <div class="row" style="position: absolute; top: 435px; left: 700px;">
+                              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <center>
+                                  <ul>
+                                    <li>
+                                      <img src="img/PNGS_0000s_0000s_0000_excellent.png" id="excellent_img" alt="false_btn" style="width: 150px; visibility: hidden; ">
+                                    </li>
+                                    <ul>
+                                  </center>
+                                  </div>
+                                </div>
+
+
+
+                              </div>
+
+                            </body>
+                            </html>
+                            <script src="js/jquery-3.3.1.min.js" ></script>
+                            <script src="js/jquery-ui.js" charset="utf-8"></script>
+                            <script src="js/bootstrap.min.js"></script>
+                            <script src="js/script.js" charset="utf-8"></script>

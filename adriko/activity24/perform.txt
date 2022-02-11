@@ -1,0 +1,15 @@
+Activities:
+	24, 8
+	[19, 30](unfit components)
+	,,, 21
+
+
+drag(ev) {
+	ev.x, ev.y;
+	pageX, pageY;
+	screenX, screenY;
+}
+
+
+multisim	-	encode_2(comp), comparators, decode_2(comp)
+deeds	-	t1_2, t1

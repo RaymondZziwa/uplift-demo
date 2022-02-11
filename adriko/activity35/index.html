@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity-35</title>
+    <style>
+        .main{
+            background-image: url(assets/img/bg.png);
+            /*background-color: black;*/
+            width: 980px;
+            height: 580px;
+            margin: auto;
+        }
+        .ne{
+            background-image: url(assets/img/dia5.png);
+            /*background-color: rgb(205, 245, 255);*/
+            width: 300px;
+            height: 200px;
+            margin-left: 330px;
+            background-repeat: no-repeat;
+            /*margin-top: 10px;*/
+        }
+        .qn{
+            background-image: url(assets/img/qn1.png);
+            /*background-color: rgb(1, 2, 2);*/
+            width: 650px;
+            height: 100px;
+            margin-left: 50px;
+            /*margin-top: 10px;*/
+            background-repeat: no-repeat;
+        }
+        .force{
+            background-image: url(assets/img/y1.png);
+            /*background-color: burlywood;*/
+            width: 300px;
+            height: 260px;
+            margin-left: 50px;
+            /*margin-top: 10px;*/
+            float: left;
+            background-repeat: no-repeat;
+        }
+        .box{
+            /*background-color: burlywood;*/
+            width: 300px;
+            height: 260px;
+            margin-left: 10px;
+            /*margin-top: 10px;*/
+            float: left;
+        }
+        .check{
+            /*background-image: url(assets/img/check.png);*/
+            /*background-color: burlywood;*/
+            width: 150px;
+            height: 50px;
+            margin-left: 100px;
+            margin-top: 200px;
+            float: left;
+        }
+        .box1{
+            /*background-color: rgb(10, 10, 9);*/
+            width: 60px;
+            height: 30px;
+            margin-left: 5px;
+            float: left;
+            margin-top: 5px;
+        }
+        .min1{
+            /*background-color: rgb(247, 247, 242);*/
+            width: 10px;
+            height: 10px;
+            margin-left: 5px;
+            float: left;
+            margin-top: 5px;
+        }
+        .box2{
+            /*background-color: rgb(12, 147, 224);*/
+            width: 60px;
+            height: 30px;
+            margin-left: 5px;
+            float: left;
+            margin-top: 5px;
+        }
+        .eqa1{
+            /*background-color: rgb(247, 247, 242);*/
+            width: 10px;
+            height: 10px;
+            margin-left: 5px;
+            float: left;
+            margin-top: 5px;
+        }
+        .box3{
+            /*background-color: rgb(13, 16, 219);*/
+            width: 60px;
+            height: 30px;
+            margin-left: 5px;
+            float: left;
+            margin-top: 5px;
+            
+        }
+        .box4{
+            /*background-color: rgb(245, 107, 27);*/
+            width: 60px;
+            height: 30px;
+            margin-left: 5px;
+            margin-top: 5px;
+            float: left;
+            clear: both;
+        }
+        .min2{
+            /*background-color: rgb(247, 247, 242);*/
+            width: 10px;
+            height: 10px;
+            margin-left: 5px;
+            float: left;
+            margin-top: 5px;
+        }
+        .box5{
+            /*background-color: rgb(226, 188, 116);*/
+            width: 60px;
+            height: 30px;
+            margin-left: 5px;
+            margin-top: 5px;
+            float: left;
+        }
+        .eqa2{
+            /*background-color: rgb(247, 247, 242);*/
+            width: 10px;
+            height: 10px;
+            margin-left: 5px;
+            float: left;
+            margin-top: 5px;
+        }
+        .box6{
+            /*background-color: rgb(44, 44, 2);*/
+            width: 60px;
+            height: 30px;
+            margin-left: 5px;
+            margin-top: 5px;
+            float: left;
+        }
+        .box7{
+            /*background-color: rgb(255, 255, 255);*/
+            width: 60px;
+            height: 30px;
+            margin-left: 5px;
+            margin-top: 5px;
+            float: left;
+            clear: both;
+        }
+        .min3{
+            /*background-color: rgb(247, 247, 242);*/
+            width: 10px;
+            height: 10px;
+            margin-left: 5px;
+            float: left;
+            margin-top: 5px;
+        }
+        .box8{
+            /*background-color: rgb(134, 46, 97);*/
+            width: 60px;
+            height: 30px;
+            margin-left: 5px;
+            margin-top: 5px;
+            float: left;
+        }
+        .eqa3{
+            /*background-color: rgb(247, 247, 242);*/
+            width: 10px;
+            height: 10px;
+            margin-left: 5px;
+            float: left;
+            margin-top: 5px;
+        }
+        .box9{
+            /*background-color: rgb(187, 48, 83);*/
+            width: 60px;
+            height: 30px;
+            margin-left: 5px;
+            margin-top: 5px;
+            float: left;
+        }
+        .box10{
+            /*background-color: rgb(14, 241, 90);*/
+            width: 60px;
+            height: 30px;
+            margin-left: 5px;;
+            margin-top: 5px;
+            float: left;
+            clear: both;
+        }
+        .min4{
+            /*background-color: rgb(247, 247, 242);*/
+            width: 10px;
+            height: 10px;
+            margin-left: 5px;
+            float: left;
+            margin-top: 5px;
+        }
+        .box11{
+            /*background-color: rgb(204, 132, 65);*/
+            width: 60px;
+            height: 30px;
+            margin-left: 5px;
+            margin-top: 5px;
+            float: left;
+            
+        }
+        .eqa4{
+            /*background-color: rgb(247, 247, 242);*/
+            width: 10px;
+            height: 10px;
+            margin-left: 5px;
+            float: left;
+            margin-top: 5px;
+        }
+        .box12{
+            /*background-color: rgb(48, 129, 129);*/
+            width: 60px;
+            height: 30px;
+            margin-left: 5px;
+            margin-top: 5px;
+            float: left;
+        }
+        .box13{
+            /*background-color: rgb(145, 145, 137);*/
+            width: 60px;
+            height: 30px;
+            margin-left: 5px;
+            margin-top: 10px;
+            float: left;
+            clear: left;
+        }
+        .bo{
+            /*background-color: rgb(145, 145, 137);*/
+            width: 20px;
+            height:20px;
+            margin-left: 5px;
+            margin-top: 10px;
+            float: left;
+        }
+        .box14{
+            /*background-color: rgb(168, 168, 103);*/
+            width: 60px;
+            height: 30px;
+            margin-left: 5px;
+            margin-top: 190px;
+            clear: left;
+        }
+        .n1{
+            /*background-color: rgb(145, 145, 137);*/
+            width: 20px;
+            height:20px;
+            margin-left: 70px;
+            margin-top: -30px;
+            float: left;
+        }
+        .none {
+            //border: 2px solid red;
+            display: block;
+            height: 70%;
+            margin-top: -50%;
+            text-align: center;
+            border-radius: 25%;
+            padding-top: 5%;
+        }
+        .cust {
+            color: white;
+        }
+    </style>
+    <script src='assets/js/script.js'></script>
+</head>
+<body>
+    <div class="main">
+        <div class="ne">
+
+        </div>
+        <div class="qn">
+
+        </div>
+        <div class="force">
+
+        </div>
+        <div class="box">
+            <div class="box1">
+                <img src="assets/img/btn1.png">
+                <span class='none' id='.1'> </span>
+            </div>
+            <div class="min1">
+                <img src="assets/img/min1.png">
+            </div>
+            <div class="box2">
+                <img src="assets/img/btn1.png">
+                <span class='none' id='.2'> </span>
+            </div>
+            <div class="eqa1">
+                <img src="assets/img/eq1.png">
+            </div>
+            <div class="box3">
+                <img src="assets/img/btn4.png">
+                <span class='none cust' id='.3'> </span>
+            </div>
+            <div class="box4">
+                <img src="assets/img/btn1.png">
+                <span class='none' id='.4'> </span>
+            </div>
+            <div class="min2">
+                <img src="assets/img/min1.png">
+            </div>
+            <div class="box5">
+                <img src="assets/img/btn1.png">
+                <span class='none' id='.5'> </span>
+            </div>
+            <div class="eqa2">
+                <img src="assets/img/eq1.png">
+            </div>
+            <div class="box6">
+                <img src="assets/img/btn4.png">
+                <span class='none cust' id='.6'> </span>
+            </div>
+            <div class="box7">
+                <img src="assets/img/btn4.png">
+                <span class='none cust' id='.7'> </span>
+            </div>
+            <div class="min3">
+                <img src="assets/img/min1.png">
+            </div>
+            <div class="box8">
+                <img src="assets/img/btn2.png">
+                <span class='none cust' id='.8'> </span>
+            </div>
+            <div class="eqa3">
+                <img src="assets/img/eq1.png">
+            </div>
+            <div class="box9">
+                <img src="assets/img/btn1.png">
+                <span class='none' id='.9'> </span>
+            </div>
+            <div class="box10">
+                <img src="assets/img/btn4.png">
+                <span class='none cust' id='.10'> </span>
+            </div>
+            <div class="min4">
+                <img src="assets/img/min1.png">
+            </div>
+            <div class="box11">
+                <img src="assets/img/btn4.png">
+                <span class='none cust' id='.11'> </span>
+            </div>
+            <div class="eqa4">
+                <img src="assets/img/eq1.png">
+            </div>
+            <div class="box12">
+                <img src="assets/img/btn1.png">
+                <span class='none' id='.12'> </span>
+            </div>
+            <div class="box13">
+                <img src="assets/img/btn1.png">
+                <span class='none' id='.13'> </span>
+            </div>
+            <div class="bo">
+                <img src="assets/img/n1.png">
+            </div>
+            <div class="box14">
+                <img src="assets/img/btn1.png">
+                <span class='none' id='.14'></span>
+            </div>
+            <div class="n1">
+                <img src="assets/img/n1.png">
+            </div>
+        </div>
+        <div class="check" onclick='check()'>
+            <img src="assets/img/check1.png">
+        </div>
+    </div>
+</body>
+</html>

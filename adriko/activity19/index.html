@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Activity-19</title>
+		<style>
+			.main{
+				background-image: url(assets/img/bg.png);
+				width: 980px;
+				height: 630px;
+				margin: auto;
+			}
+			.qn{
+				width: 270px;
+				height: 550px;
+				float: left;
+				margin-left: 30px;
+				margin-top: 50px;
+			}
+			.seal{
+				width: 330px;
+				height: 450px;
+				float: left;
+				margin-left: 20px;
+				margin-top: 100px;
+			}
+			.int{
+				width: 300px;
+				height: 550px;
+				float: left;
+				margin-left: 20px;
+				margin-top: 50px;
+			}
+			.qun{
+				width: 270px;
+				height: 200px;
+			}
+			.text{
+				width: 270px;
+				height: 300px;
+			}
+			.check{
+				width: 100px;
+				height: 50px;
+			}
+			.inst1{
+				width: 300px;
+				height: 200px;
+			}
+			.exce{
+				width: 150px;
+				height: 50px;
+				float: right;
+				margin-top: 200px;
+			}
+			.try{
+				width: 150px;
+				height: 50px;
+				clear: both;
+				float: right;
+				margin-top: 20px;
+			}
+			.answerC,.answerK{
+				text-align:center;
+				background-image: linear-gradient(#cad8d5,#535351);
+				font-size: 1rem;
+				color: black;
+				border-radius: 10px;
+				border-bottom: 2px solid #61686b;
+				/*box-shadow:-3.5px 0px 2px 2px #283090;*/
+			}
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+			}
+			.seal img {
+				position: absolute;
+			}
+			.results {
+				position: relative;
+				height: 370px;
+			}
+			.results img {
+				position: absolute;
+				display: none;
+			}
+			#par_w {
+				position: absolute;
+				width: 90px;
+				left: 10%;
+    			top: 10%;
+			}
+		</style>
+		<script src='assets/js/script.js'></script>
+		<script src='assets/js/jquery-1.9.1.min.js'></script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="qn">
+				<div class="qun">
+					<img src="assets/img/qn.png" style="width: 230px; height: 180px;">
+				</div>
+				<div class="text">
+					<input id='ans' type="text"  class="answerC" style="height: 150px;">
+				</div>
+				<div class="check">
+					<img src="assets/img/check.png" style="width: 200px; height: 50px;" alt="check" id="check" onclick="check()" style="cursor: pointer;">
+				</div>
+			</div>
+			<div class="seal" style='position: relative;'>
+				<!-- whenever the syringe object arrives -->
+				<img id='wSyringe' src="assets/img/labels.png"style="width: 300px;">
+
+				<!-- worst case top: 38% -->
+				<img id='wPush' src="assets/img/push.png" style='width:80px; left: 10%; top:10%; z-index:2;' draggable='true'  ondragstart='dragSt_h2o(event)' ondrag='drag_h2o(event)' ondrop='drop_h2o(event)' ondragover='allowDrop_h2o(event)'>
+				<!-- worst case top: 73%; height: 6% -->
+				<img id='wWater' src="assets/img/water.png" style='width:48px; left: 15%; top:45%; height: 35%;' >
+				<img id='wCarry' src="assets/img/carry.png" style='width:80px; left: 10%; top:42%;' >
+				<img id='water-bg' src="assets/img/water.png" style='width:38px; left: 16.5%; top:45%; height: 35%; opacity:50%;' >
+
+
+				<!-- worst case top: 38% -->
+				<img id='aPush' src="assets/img/push.png" style='width:80px; left: 70%; top:10%; z-index:2;' draggable='true' ondragstart='dragSt_o(event)' ondrag='drag_o(event)' ondrop='drop_o(event)' ondragover='allowDrop_o(event)'>
+				<!-- worst case top: 73%; height: 6% -->
+				<!-- <img id='aWater' src="assets/img/water.png" style='width:48px; left: 75%; top:45%; height: 35%;' > -->
+				<img id='aCarry' src="assets/img/carry.png" style='width:80px; left: 70%; top:42%;' >
+			</div>
+			<div class="int">
+				<div class="inst">
+					<div class="inst1">
+						<img src="assets/img/inst.png" style="width: 300PX;">
+					</div>
+					<div class='results'>
+						<div class="exce">
+							<img id='excel' src="assets/img/exce.png" style="width: 160px; height: 50px;">
+						</div>
+						<div class="try">
+							<img id='try' src="assets/img/try.png" style="width: 160px; height: 50px;" style="cursor: pointer;">
+							<img id='fail' src="assets/img/sorry.png" style="width: 160px; height: 50px;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!-- <script>
+		$('#wPush').draggable({
+			containment: 'par_w'
+		});
+	</script> -->
+</html>

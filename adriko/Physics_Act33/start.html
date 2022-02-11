@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity-33 State</title>
+    <style>
+        .main{
+            background-image: url(assets/img/bg.png);
+            /* background-color: black; */
+            width: 980px;
+            height: 630px;
+            margin: auto;
+        }
+        .stand1{
+            /* background-color: white; */
+            width: 400px;
+            height: 370px;
+            margin-left: 30px;
+            float: left;
+            margin-top: 10px;
+        }
+        .ballon{
+            /* background-color: red; */
+            width: 200px;
+            height: 250px;
+            margin-left: 350px;
+            margin-top: 100px;
+            float: left;
+        }
+        .stand2{
+            /* background-color: white; */
+            width: 400px;
+            height: 370px;
+            margin-top: 10px;
+            margin-left: 20px;
+            float: left;
+        }
+        .qn{
+            /* background-color: white; */
+            width: 700px;
+            height: 70px;
+            margin-left: 60px;
+            margin-top: 10px;
+            clear: left;
+        }
+        .txt1{
+            /* background-color: white; */
+            width: 700px;
+            height: 70px;
+            margin-left: 60px;
+            margin-top: 10px;
+            clear: left;
+        }
+/*
+        .check{
+             background-color: white; 
+            width: 150px;
+            height: 70px;
+            margin-left: 700px;
+            margin-top: 10px;
+            clear: left;
+        }
+*/
+        button{
+            border-radius: 15px;
+            width: 140px;
+            margin-left: 700px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="ballon">
+            <img src="assets/img/expanded.png">
+        </div>
+        <div class="qn">
+            <img src="assets/img/state2.png">
+        </div>
+        <div id="text"  class="txt1">
+            <input type="text" style="width: 600px; height: 40px; border-radius: 15px;" id="myText" onkeyup="stoppedTyping()">
+        </div>
+        <button onclick="verify()" id="check" disabled>
+            <img src="assets/img/check.png" style="margin-left: -15px; margin-top: -9px;">
+        </button>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <p class="correctAnswer" style="width: 500px; height: 30px; margin-left: 70px; background-color: cornflowerblue; margin-top: -50px; border-radius: 15px; padding-left: 50px; padding-top: 10px;"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function stoppedTyping(){
+            if(document.getElementById('myText').value.length > 0){
+                document.getElementById('check').disabled = false;
+            }
+            else{
+                document.getElementById('check').disabled = true;
+            }
+        }
+        
+        function verify (){
+            if(document.getElementById('myText').value = null){
+                alert("You can not view the answeer  without trying!!");
+            }
+            else{
+                let correctAnswer = document.querySelector('.correctAnswer');
+                const ans = "Paper tissues get attracted on the balloon";
+                correctAnswer.innerHTML=ans;
+            }
+        }
+    </script>
+</body>
+</html>

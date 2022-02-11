@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Physics | Activity 18</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<style>
+
+body, html{
+  margin:0 auto;
+  background: linear-gradient( #00d4fc, #002ae1);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 630px;
+  max-width: 980px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+
+}
+
+ul{
+  list-style: none;
+  display: inline-flex;
+}
+
+</style>
+
+
+<body>
+  <div class="Main_content">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <center>
+          <img src="img/header.png" alt="header" style="width: 800px;">
+        </center>
+      </div>
+    </div>
+
+
+    <!---***************Trigger a given div to be displayed with its corresponding button*******************************************************-->
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <center>
+          <img src="img/body.png" id="body_background" alt="body" style="width: 700px;">
+        </center>
+      </div>
+
+<!--
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="display: none">
+        <center>
+          <img src="img/body2.png" id="body_background2" alt="body" style="width: 700px;">
+        </center>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="display: none">
+        <center>
+          <img src="img/body3.png" id="body_background3" alt="body" style="width: 700px;">
+        </center>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="display: none">
+        <center>
+          <img src="img/body4.png" id="body_background4" alt="body" style="width: 700px;">
+        </center>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="display: none">
+        <center>
+          <img src="img/body5.png" id="body_background5" alt="body" style="width: 700px;">
+        </center>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="display: none">
+        <center>
+          <img src="img/body6.png" id="body_background6" alt="body" style="width: 700px;">
+        </center>
+      </div>
+
+-->
+    </div>
+
+    <!---##############Trigger the corresponding buttons to be shown################################################################-->
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="Btn1">
+
+        <center>
+          <ul>
+            <li>
+              <button type="button" id="true_button"  style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer;">
+                <img src="img/trueBtn.png" alt="false_btn" style="width: 130px;">
+              </button>
+            </li>
+
+            <li><p style="color: black; font-size: 25px; padding-left: 10px; padding-right: 10px; margin-left: 50px; margin-right: 50px; margin-top: 5px; border-radius: 20px; background: linear-gradient(#c5d5d4, #f1edd8);">Stars and Sun</p></li>
+
+            <li>
+              <button type="button" id="false_button" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer;">
+                <img src="img/falseBtn.png" alt="false_btn" style="width: 130px;">
+              </button>
+            </li>
+
+            <ul>
+            </center>
+          </div>
+
+          <!---------------------------Btns2------------------------------------->
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="Btn2" style="display: none">
+            <center>
+              <ul>
+                <li>
+                  <button type="button" id="true_button2"  style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer;">
+                    <img src="img/trueBtn.png" alt="false_btn" style="width: 130px;">
+                  </button>
+                </li>
+
+                <li><p style="color: black; font-size: 25px; padding-left: 10px; padding-right: 10px; margin-left: 50px; margin-right: 50px; margin-top: 5px; border-radius: 20px; background: linear-gradient(#c5d5d4, #f1edd8);">Moon</p></li>
+
+                <li>
+                  <button type="button" id="false_button2" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer;">
+                    <img src="img/falseBtn.png" alt="false_btn" style="width: 130px;">
+                  </button>
+                </li>
+
+                <ul>
+                </center>
+              </div>
+
+              <!---------------------------Btns3------------------------------------->
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="Btn3" style="display: none">
+                <center>
+                  <ul>
+                    <li>
+                      <button type="button" id="true_button3"  style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer;">
+                        <img src="img/trueBtn.png" alt="false_btn" style="width: 130px;">
+                      </button>
+                    </li>
+
+                    <li><p style="color: black; font-size: 25px; padding-left: 10px; padding-right: 10px; margin-left: 50px; margin-right: 50px; margin-top: 5px; border-radius: 20px; background: linear-gradient(#c5d5d4, #f1edd8);">Flames</p></li>
+
+                    <li>
+                      <button type="button" id="false_button3" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer;">
+                        <img src="img/falseBtn.png" alt="false_btn" style="width: 130px;">
+                      </button>
+                    </li>
+
+                    <ul>
+                    </center>
+                  </div>
+
+
+                  <!---------------------------Btns4------------------------------------->
+                  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="Btn4" style="display: none">
+                    <center>
+                      <ul>
+                        <li>
+                          <button type="button" id="true_button4"  style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer;">
+                            <img src="img/trueBtn.png" alt="false_btn" style="width: 130px;">
+                          </button>
+                        </li>
+
+                        <li><p style="color: black; font-size: 25px; padding-left: 10px; padding-right: 10px; margin-left: 50px; margin-right: 50px; margin-top: 5px; border-radius: 20px; background: linear-gradient(#c5d5d4, #f1edd8);">Lightning</p></li>
+
+                        <li>
+                          <button type="button" id="false_button4" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer;">
+                            <img src="img/falseBtn.png" alt="false_btn" style="width: 130px;">
+                          </button>
+                        </li>
+
+                        <ul>
+                        </center>
+                      </div>
+
+
+                      <!---------------------------Btns5------------------------------------->
+                      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="Btn5" style="display: none">
+                        <center>
+                          <ul>
+                            <li>
+                              <button type="button" id="true_button5"  style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer;">
+                                <img src="img/trueBtn.png" alt="false_btn" style="width: 130px;">
+                              </button>
+                            </li>
+
+                            <li><p style="color: black; font-size: 25px; padding-left: 10px; padding-right: 10px; margin-left: 50px; margin-right: 50px; margin-top: 5px; border-radius: 20px; background: linear-gradient(#c5d5d4, #f1edd8);">Ionized gas</p></li>
+
+                            <li>
+                              <button type="button" id="false_button5" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer;">
+                                <img src="img/falseBtn.png" alt="false_btn" style="width: 130px;">
+                              </button>
+                            </li>
+
+                            <ul>
+                            </center>
+                          </div>
+
+                          <!---------------------------Btns6------------------------------------->
+                          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="Btn6" style="display: none">
+                            <center>
+                              <ul>
+                                <li>
+                                  <button type="button" id="true_button6"  style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer;">
+                                    <img src="img/trueBtn.png" alt="false_btn" style="width: 130px;">
+                                  </button>
+                                </li>
+
+                                <li><p style="color: black; font-size: 25px; padding-left: 10px; padding-right: 10px; margin-left: 50px; margin-right: 50px; margin-top: 5px; border-radius: 20px; background: linear-gradient(#c5d5d4, #f1edd8);">Planets</p></li>
+
+                                <li>
+                                  <button type="button" id="false_button6" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer;">
+                                    <img src="img/falseBtn.png" alt="false_btn" style="width: 130px;">
+                                  </button>
+                                </li>
+
+                                <ul>
+                                </center>
+                              </div>
+
+
+
+
+                            </div>
+                            <!--#########################################################################################################--->
+                            <!---**********************This is where we display the button results **************************************--->
+                            <div class="row" style="position: absolute; top: 435px; left: 700px;">
+                              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <center>
+                                  <ul>
+                                    <li>
+                                      <img src="img/PNGS_0000s_0000s_0000_excellent.png" id="excellent_img" alt="false_btn" style="width: 150px; visibility: hidden;">
+                                    </li>
+                                    <ul>
+                                    </center>
+                                  </div>
+                                </div>
+
+
+
+                              </div>
+
+                            </body>
+                            </html>
+                            <script src="js/jquery-3.3.1.min.js" ></script>
+                            <script src="js/bootstrap.min.js"></script>
+                            <script src="js/script.js" charset="utf-8"></script>

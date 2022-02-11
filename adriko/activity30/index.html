@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Activity-30</title>
+		<style>
+			.main{
+				background-image: url(assets/img/bg.png);
+				width: 980px;
+				height: 630px;
+				margin: auto;
+			}
+			.qn{
+				width: 770px;
+				height: 130px;
+				float: right;
+				margin-right: 20px;
+				margin-top: 10px;
+			}
+			.all{
+				width: 700px;
+				height: 350px;
+				float: left;
+				margin-left: 50px;
+				margin-top: 10px;
+			}
+			.btn{
+				width: 200px;
+				height: 150px;
+				float: left;
+				margin-left: 20px;
+				margin-top: 50px;
+			}
+			.kgs{
+				width: 500px;
+				height: 130px;
+				float: left;
+				margin-left: 30%;
+			}
+			.check{
+				width: 200px;
+				height: 70px;
+				float: left;
+				margin-top: 10px;
+				position: relative;
+				top: -20%;
+				left: 70%;
+			}
+			.newton{
+				width: 350px;
+				height: 350px;
+				float: left;
+				position: relative;
+			}
+			.bord{
+				width: 350px;
+				height: 350px;
+				float: left;
+			}
+			.answerC,.answerK{
+				text-align:center;
+				background-image: linear-gradient(#cad8d5,#535351);
+				font-size: 1rem;
+				color: black;
+				border-radius: 10px;
+				border-bottom: 2px solid #61686b;
+				/*box-shadow:-3.5px 0px 2px 2px #283090;*/
+			}
+			.CtoK, .KtoC{
+			   /* border-collapse: separate;*/
+				border: 2px solid black;
+				border-radius: 10px;
+				margin-top: 70px;
+			}
+			.newton img, span {
+				position: absolute;
+			}
+			#hk {
+				height:85%;
+				top: 24%;
+    			left: 6%;
+			}
+			#ln {
+				width: 25%;
+			}
+			.tpc {
+				top: 23%;
+				left: 8%;
+				width: 10%;
+			}
+			#drp {
+				top: 95%;
+    			left: 6%;
+				display: inline-block;
+				width: 11%;
+    			height: 25%;
+			}
+			.outc {
+				width:75%;
+				height:10%;
+				top: 21%;
+    			left: 22%;
+			}
+			#res {
+				width:30%;
+				height:55%;
+				top:20%;
+				left:63%;
+				text-align: center;
+				color:white;
+			}
+			.btn span {
+				top: 65%;
+				left: 72%;
+				display: inline-grid;
+			}
+			.btn img {
+				display: none;
+			}
+		</style>
+		<script src='assets/js/script.js'></script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="qn">
+				<img src="assets/img/qn.png" style="width: 750px; height: 120px;">
+			</div>
+			<div class="all">
+				<div class="newton">
+					<!-- whenever the divided hook arrives -->
+					<img id='hk' src="assets/img/balHook.png">
+					<img id='ln' src="assets/img/balLn.png">
+					<img id='tp' class='tpc' src="assets/img/balTop.png" style='top: 23%'>
+					<span id='drp' ondragover='allowDrop(event)' ondrop='drop(event)' ondrag='drag(event)'></span>
+					<span id='out' class='outc'>
+						<img id='line' style='width:100%' src="assets/img/line.png">
+						<span id='res'></span>
+					</span>
+					<!-- <img id='pointer' src="assets/img/wie.png" style="width: 350px"> -->
+				</div>
+				<div class="bord">
+					<table style="width: 100%;height: 160px;text-align: center;font-weight:bold" class="KtoC">
+						<tr>
+							<th scope="col">MASS</th>
+							<th scope="col">WEIGHT</th>
+						</tr>
+						<tr>
+							<td>
+								1kg
+							</td>
+							<td>
+								<input type="text" class="answerK">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								8kg
+							</td>
+							<td>
+								<input type="text" class="answerK">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								3kg
+							</td>
+							<td>
+								<input type="text" class="answerK">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								6kg
+							</td>
+							<td>
+								<input type="text" class="answerK">
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="btn">
+				<img id='exce' src="assets/img/exce.png" style="width: 150px">
+				<span>
+					<img id='sorry' src="assets/img/sorry.png" style="width: 150px">
+					<img id='again' src="assets/img/again.png" style="width: 150px">
+				<span>
+			</div>
+			<div class="kgs">
+				<img id='1' src="assets/img/1kg.png" style="width: 70px; height: 70px;" draggable='true' ondragstart='drag(event)'>
+				<img id='8' src="assets/img/8kg.png" style="width: 70px; height: 70px;" draggable='true' ondragstart='drag(event)'>
+				<img id='3' src="assets/img/3kg.png" style="width: 70px; height: 70px;" draggable='true' ondragstart='drag(event)'>
+				<img id='6' src="assets/img/6kg.png" style="width: 70px; height: 70px;" draggable='true' ondragstart='drag(event)'>
+			</div>
+			<div class="check">
+				<img id='chkBn' src="assets/img/check.png" style="width: 200px" onclick='check()'>
+			</div>
+		</div>
+	</body>
+</html>

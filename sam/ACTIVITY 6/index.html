@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Physics | Activity 6</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+
+</head>
+<style>
+
+body, html{
+  margin:0 auto;
+  background: linear-gradient( #00d4fc, #002ae1);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 630px;
+  max-width: 980px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+
+}
+
+ul{
+  list-style: none;
+  display: inline-flex;
+}
+
+</style>
+
+
+<body>
+  <div class="Main_content">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <center>
+          <img src="img/question.png" alt="header" style="width: 800px;">
+        </center>
+      </div>
+    </div>
+
+
+
+
+    <!---***************Trigger a given div to be displayed with its corresponding button*******************************************************-->
+    <div class="row">
+      <!--<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+        <center>
+          <img src="img/box_body.png" id="body_background" alt="body" style="width: 700px; border-radius: 10px; margin-top: 30px;">
+        </center>
+      </div> -->
+
+
+    <!---##############Trigger the corresponding buttons to be shown################################################################-->
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="Btn1" style="margin-top: 20px;">
+
+        <center>
+          <ul style="">
+            <li style="display: inline-flex; width: 100px;">
+              <div class="left_options">
+                <button type="button" id="mass" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px;">
+                       <img src="img/mass.png" alt="false_btn" style="width: 130px;">
+                </button>
+
+                <button type="button" id="volume" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px;">
+                       <img src="img/volume.png" alt="false_btn" style="width: 130px;">
+                </button>
+
+                <button type="button" id="height" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px;">
+                       <img src="img/height.png" alt="false_btn" style="width: 130px;">
+                </button>
+
+                <button type="button" id="temperature" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px;">
+                       <img src="img/temperature.png" alt="false_btn" style="width: 130px;">
+                </button>
+
+                <button type="button" id="radius" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px;">
+                       <img src="img/radius.png" alt="false_btn" style="width: 130px;">
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <div id="box_body" style="margin-left: 80px;" >
+                <img src="img/box_body.png" alt="" width="400">
+              </div>
+            </li>
+
+            <li style="display: inline-flex; width: 100px;">
+              <div class="right_options">
+                <button type="button" id="acceleration" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px;">
+                       <img src="img/acceleration.png" alt="false_btn" style="width: 130px;">
+                </button>
+
+                <button type="button" id="area" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px;">
+                       <img src="img/area.png" alt="false_btn" style="width: 130px;">
+                </button>
+
+                <button type="button" id="diameter" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px;">
+                       <img src="img/diameter.png" alt="false_btn" style="width: 130px;">
+                </button>
+
+                <button type="button" id="surface_area" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px;">
+                       <img src="img/surface_area.png" alt="false_btn" style="width: 130px;">
+                </button>
+
+                <button type="button" id="voltage" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px;">
+                       <img src="img/voltage.png" alt="false_btn" style="width: 130px;">
+                </button>
+              </div>
+         <!--<button type="button" id="check_button" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; margin-top: 10px;">
+                <img src="img/check_btn.png" alt="false_btn" style="width: 130px;">
+              </button> -->
+            </li>
+
+            <li>
+              <!--###############################This is where the results are displayed##############################################-->
+              <img src="img/PNGS_0000s_0000s_0000_excellent.png" id="excellent_img" alt="false_btn" style="width: 120px; visibility: hidden; position: absolute; margin-top: 250px; margin-left: 90px;">
+              <!------------------------------------------------------------------------------------------------>
+
+              <button type="button" id="check_btn" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 50px; margin-top: 300px; position: absolute;">
+                     <img src="img/check_btn.png" alt="false_btn" style="width: 200px;">
+              </button>
+            </li>
+
+            <ul>
+            </center>
+          </div>
+
+
+
+
+                          </div>
+                            <!--#########################################################################################################--->
+
+
+
+                              </div>
+
+                            </body>
+                            </html>
+                            <script src="js/jquery-3.3.1.min.js" ></script>
+                            <script src="js/jquery-ui.js" charset="utf-8"></script>
+                            <script src="js/bootstrap.min.js"></script>
+                            <script src="js/script.js" charset="utf-8"></script>

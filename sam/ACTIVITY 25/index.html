@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Physics | Activity 25</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+
+</head>
+<style>
+
+body, html{
+  margin:0 auto;
+  background: linear-gradient( #00d4fc, #002ae1);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 630px;
+  max-width: 980px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+
+}
+
+ul{
+  list-style: none;
+  display: inline-flex;
+}
+
+</style>
+
+
+<body>
+  <div class="Main_content">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <center>
+          <img src="img/question.png" alt="header" style="width: 800px;">
+        </center>
+      </div>
+    </div>
+
+
+
+
+    <!---***************Trigger a given div to be displayed with its corresponding button*******************************************************-->
+    <div class="row">
+      <!--<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+        <center>
+          <img src="img/box_body.png" id="body_background" alt="body" style="width: 700px; border-radius: 10px; margin-top: 30px;">
+        </center>
+      </div> -->
+
+
+    <!---##############Trigger the corresponding buttons to be shown################################################################-->
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="Btn1" style="margin-top: 20px;">
+
+        <center>
+          <ul style="">
+            <li style="display: inline-flex;">
+              <div id="left_options" style="width: 400px; border-radius: 20px; height: 200px; border: 5px solid black; margin-right: 10px; z-index: 9000;">
+                  <img id="push_btn" src="img/push_btn.png" width="100" style="z-index: 9999; margin-top: 0px; position: relative;">
+                  <img id="excellent_img" src="img/PNGS_0000s_0000s_0000_excellent.png" alt="" style="border-radius: 10px; width: 100px; display: none;">
+              </div>
+              <!--
+              <div id="left_options2" style="width: 400px; border-radius: 20px; height: 200px; border: 5px solid black; margin-right: 10px; z-index: 9000; display: none;">
+                  <img id="push_btn" src="img/push_btn.png" width="100" style="z-index: 9999; margin-top: 0px; position: relative;">
+                  <img id="excellent_img" src="img/PNGS_0000s_0000s_0000_excellent.png" alt="" style="border-radius: 10px; width: 100px; display: none;">
+              </div>
+
+              <div id="left_options3" style="width: 400px; border-radius: 20px; height: 200px; border: 5px solid black; margin-right: 10px; z-index: 9000; display: none;">
+                  <img id="push_btn" src="img/push_btn.png" width="100" style="z-index: 9999; margin-top: 0px; position: relative;">
+                  <img id="excellent_img" src="img/PNGS_0000s_0000s_0000_excellent.png" alt="" style="border-radius: 10px; width: 100px; display: none;">
+              </div>
+
+              <div id="left_options4" style="width: 400px; border-radius: 20px; height: 200px; border: 5px solid black; margin-right: 10px; z-index: 9000; display: none;">
+                  <img id="push_btn" src="img/push_btn.png" width="100" style="z-index: 9999; margin-top: 0px; position: relative;">
+                  <img id="excellent_img" src="img/PNGS_0000s_0000s_0000_excellent.png" alt="" style="border-radius: 10px; width: 100px; display: none;">
+              </div>  -->
+            </li>
+
+            <li>
+              <div id="right_options" style="width: 400px; border-radius: 20px; height: 200px; border: 5px solid black; margin-left: 10px; z-index: 9001;">
+                  <img id="pull_btn" src="img/pull_btn.png" width="100" style="z-index: 9990;">
+                  <img id="excellent_img2" src="img/PNGS_0000s_0000s_0000_excellent.png" alt="" style="border-radius: 10px; width: 100px; display: none;">
+              </div>
+            </li>
+            <ul>
+            </center>
+          </div>
+
+                            </div>
+                            <center>
+                              <div style="position: absolute; left: 60%; width: 410px; height: 210px;">
+                                <div class="item" id="item1.1" style="position: relative; left: 0px; z-index: 7000;" draggable="true">
+                                  <img id="img_box" src="img/rope_pull.png" alt="" style="border-radius: 10px; width: 400px; height: 200px; object-fit: contain; ">
+                                </div>
+
+                                <div class="item" id="item1.2" style="position: relative; left: 0px; z-index: 7000;" draggable="true">
+                                  <img id="img_box2" src="img/finger_push.png" alt="" style="border-radius: 10px; width: 400px; height: 200px; object-fit: contain; display: block; margin-top: 90px;">
+                                </div>
+
+                                <div class="item" id="item1.3" style="position: relative; left: 0px; z-index: 7000;" draggable="true">
+                                  <img id="img_box3" src="img/tow_truck.png" alt="" style="border-radius: 10px; width: 400px; height: 200px; object-fit: contain; display: block; margin-top: 90px;">
+                                </div>
+
+                                <div class="item" id="item1.4" style="position: relative; left: 0px; z-index: 7000;" draggable="true">
+                                  <img id="img_box4" src="img/wheelbarrow.png" alt="" style="border-radius: 10px; width: 400px; height: 200px; object-fit: contain; display: block; margin-top: 90px;">
+                                </div>
+
+                              </div>
+
+                              <!--############################BUTTONS FOR check##############################################################-->
+                                <button type="button" id="check_button" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px;">
+                                       <img src="img/check_btn.png" alt="false_btn" style="width: 200px;">
+                                </button>
+
+                                <button type="button" id="check_button2" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; display: none;">
+                                       <img src="img/check_btn.png" alt="false_btn" style="width: 200px;">
+                                </button>
+
+                                <button type="button" id="check_button3" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; display: none;">
+                                       <img src="img/check_btn.png" alt="false_btn" style="width: 200px;">
+                                </button>
+
+                                <button type="button" id="check_button4" style="border-radius: 50px; padding: 0px; background: transparent; border: 1px solid rgba(0,0,0,0); cursor: pointer; margin-left: 20px; display: none;">
+                                       <img src="img/check_btn.png" alt="false_btn" style="width: 200px;">
+                                </button>
+
+                                <div id="dragItems2" style="display: none;">
+
+                                </div>
+
+
+                            </center>
+                            <!--#########################################################################################################--->
+
+
+
+                              </div>
+
+                            </body>
+                            </html>
+                            <script src="js/jquery-3.3.1.min.js" ></script>
+                            <script src="js/jquery-ui.js" charset="utf-8"></script>
+                            <script src="js/bootstrap.min.js"></script>
+                            <script src="js/script.js" charset="utf-8"></script>

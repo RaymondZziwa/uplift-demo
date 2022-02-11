@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tissue Bits</title>
+    <style>
+      .main{
+        background-image: url("assets/img/bg.png");
+        /* background-color: blue; */
+        width: 980px;
+        height: 630px;
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main" id="main">
+      <div id="baloon" class="baloon">
+        <img src="assets/img/airballon.png" style="margin-top: 50px; margin-left: 400px;">
+      </div>
+      <div id="spik" class="spik">
+        <img src="assets/img/spark.png" style="margin-top: 50px; margin-left: 400px;">
+      </div>
+      <div id="tissue" class="tissue">
+        <img src="assets/img/airlight.png" style="margin-top: 50px; margin-left: 400px;">
+      </div>
+      <div id="qn" class="qn">
+        <img src="assets/img/ballontisu.png" style="margin-top: 50px; margin-left: 70px;">
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      let spik = document.getElementById('spik')
+
+      spik.onmouseover=function(){
+        spik.innerHTML='';
+        let newImg = document.createElement('img')
+        newImg.src = "assets/img/light.png";
+        newImg.style = "margin-left: 400px";
+        spik.appendChild(newImg)
+      }
+    </script>
+  </body>
+</html>
