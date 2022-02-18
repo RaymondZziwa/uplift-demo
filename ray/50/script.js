@@ -2,16 +2,24 @@ const arr = ["One end of a length of clean capillary tubing is heated in a bunse
 
 const qtnText = document.getElementById("qtntext");
 const space = document.getElementById("lab")
-let x=0;
-let l =1;
+let x=1;
+let l =3;
+qtnText.innerHTML = arr[0]
 const pic = document.createElement("img");
 pic.classList.add("createdimg")
+pic.src = "imgs/1.png"
+space.append(pic)
 
-setInterval(() => {
-    qtnText.innerHTML = arr[x]
-    pic.src = `imgs/${l}.png`;
-    space.append(pic)
-    l++
-    x++
-}, 3000);
+let inter = setInterval(() => {
+     qtnText.innerHTML = arr[x]
+     pic.src = `imgs/${l}.png`;
+     space.append(pic)
+     l++
+     x++
+     if(l==13){
+        clearInterval(inter);
+     }
+ }, 3000);
+
+
 
