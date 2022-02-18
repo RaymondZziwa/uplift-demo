@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Activity-8</title>
+		<style>
+			body{
+				width: 980px;
+				height: 630px;
+				margin: auto;
+			}
+			.main{
+				background-image: url(assets/img/bg.png);
+				width: 980px;
+				height: 630px;
+			}
+			.quesion{
+				width: 700px;
+				height: 100px;
+				margin-left: 30px;
+				margin-top: 10px;
+			}
+			.all{
+				width: 650px;
+				height: 500px;
+				margin-left: 30px;
+				margin-top: 10px;
+				float: left;
+			}
+			.tab{
+				width: 400px;
+				height: 100px;
+				margin-top: 10px;
+				clear: both;
+				
+			}
+			.object{
+				width: 600px;
+				height: 150px;
+				margin-top: 150px;
+			}
+			.obj1{
+				width: 132px;
+				height: 150px;
+				margin-top: 50px;
+				float: left;
+			}
+			.obj2{
+				width: 132px;
+				height: 150px;
+				margin-top: 50px;
+				float: left;
+			}
+			.obj3{
+				width: 132px;
+				height: 150px;
+				margin-top: 50px;
+				float: left;
+			}
+			.obj4{
+				width: 132px;
+				height: 150px;
+				margin-top: 50px;
+				float: left;
+			}
+			.wei{
+				width: 280px;
+				height: 370px;
+				margin-left: 10px;
+				margin-top: 140px;
+				float: left;
+			}
+			.weit{
+				width: 200px;
+				height: 280px;
+				margin-left: 70px;
+				position: relative;
+			}
+			.check{
+				width: 200px;
+				height: 50px;
+				margin-top: 30px;
+				margin-left: 70px;
+			}
+			.answerC,.answerK{
+				text-align:center;
+				background-image: linear-gradient(#cad8d5,#535351);
+				font-size: 1rem;
+				color: black;
+				border-radius: 10px;
+				border-bottom: 2px solid #61686b;
+				/*box-shadow:-3.5px 0px 2px 2px #283090;*/
+			}
+			.fil{
+				text-align:center;
+				background-color: #FFD700;
+				font-size: 1rem;
+				color: black;
+				border-radius: 10px;
+				border-bottom: 2px solid #3D3635;
+				border-left: 2px solid #3D3635;
+				border-right: 2px solid #3D3635;
+				border-top: 2px solid #3D3635;
+				/*box-shadow:-3.5px 0px 2px 2px #283090;*/
+			}
+			#weigh {
+				position: absolute;
+				top: 20%;
+			}
+			#green {
+				position: absolute;
+				top: 40%;
+				left: 2.5%;
+			}
+			#results {
+				display: none;
+				color: red;
+				width: 80px;
+				height: 40px;
+				position: absolute;
+				top: 50%;
+				left: 30%;
+				z-index: 5;
+			}
+			.ans {
+				display: none;
+			}
+		</style>
+		<script src='assets/js/script.js'> </script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="quesion">
+				<img src="assets/img/qn.png" style="width: 700px; height: 100px;">
+			</div>
+			<div class="all">
+				<div class="tab" style="border=0;">
+					<table style="width: 100%;border-radius: 20px;height: 160px;text-align: center;" class="CtoK">
+						<tr>
+							<th style="font-size: 14px">
+								ITEM
+							</th>
+							<th style="font-size: 14px">
+								VOLUME(cm<sup>3</sup>)
+							</th>
+							<th style="font-size: 14px">
+								MASS(g)
+							</th>
+							<th style="font-size: 14px">
+								DENSITY(gcm<span><sup>-3</sup></span>)
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<img src="assets/img/wood.png" style="width: 130px; height: 50px;">
+							</td>
+							<td>
+								<input type="text" class="fil vol" id="text1" style="width: 130px; height: 30px" disabled value=''>
+							</td>
+							<td>
+								<input type="text" class="fil mass" id="text1" style="width: 130px; height: 30px" disabled value=''>
+							</td>
+							<td>
+								<input type="text" class="answerK dens" id="text1" style="width: 130px; height: 30px" value=''>
+							</td>
+							<td>
+								<img class='ans' src="assets/img/sorry.png" style="width: 130px; height: 50px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="assets/img/steel.png" style="width: 130px; height: 50px;">
+							</td>
+							<td>
+								<input type="text" class="fil vol" id="text1" style="width: 130px; height: 30px" disabled value=''>
+							</td>
+							<td>
+								<input type="text" class="fil mass" id="text1" style="width: 130px; height: 30px" disabled value=''>
+							</td>
+							<td>
+								<input type="text" class="answerK dens" id="text1" style="width: 130px; height: 30px" value=''>
+								<!--<img src="assets/img/dark.png" style="width: 130px; height: 50px;">-->
+							</td>
+							<td>
+								<img class='ans' src="assets/img/exce.png" style="width: 130px; height: 50px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="assets/img/glass.png" style="width: 130px; height: 50px;">
+							</td>
+							<td>
+								<input type="text" class="fil vol" id="text1" style="width: 130px; height: 30px" disabled value=''>
+							</td>
+							<td>
+								<input type="text" class="fil mass" id="text1" style="width: 130px; height: 30px" disabled value=''>
+							</td>
+							<td>
+								<input type="text" class="answerK dens" id="text1" style="width: 130px; height: 30px" value=''>
+							</td>
+							<td>
+								<img class='ans' src="assets/img/exce.png" style="width: 130px; height: 50px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="assets/img/foam.png" style="width: 130px; height: 50px;">
+							</td>
+							<td>
+								<input type="text" class="fil vol" id="text1" style="width: 130px; height: 30px" disabled value=''>
+							</td>
+							<td>
+								<input type="text" class="fil mass" id="text1" style="width: 130px; height: 30px" disabled value=''>
+							</td>
+							<td>
+								<input type="text" class="answerK dens" id="text1" style="width: 130px; height: 30px" value=''>
+							</td>
+							<td>
+								<img class='ans' src="assets/img/exce.png" style="width: 130px; height: 50px;">
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="object">
+					<!-- make the below elements draggable! -->
+					<div class="obj1">
+						<img class='item' src="assets/img/box1.png" id='wood' style="width: 132px; height: 120px;" draggable='true' ondragstart='drag(event)'>
+					</div>
+					<div class="obj2">
+						<img class='item' src="assets/img/box2.png" id='steel' style="width: 132px; height: 120px;" draggable='true' ondragstart='drag(event)'>
+					</div>
+					<div class="obj3">
+						<img class='item' src="assets/img/box3.png" id='glass' style="width: 132px; height: 120px;" draggable='true' ondragstart='drag(event)'>
+					</div>
+					<div class="obj4">
+						<img class='item' src="assets/img/box4.png" id='styrofoam' style="width: 132px; height: 120px;" draggable='true' ondragstart='drag(event)'>
+					</div>
+				</div>
+			</div>
+			<div class="wei">
+				<div class="weit">
+					<p id='results'></p>
+					<img src="assets/img/weigh.png" id='weigh' style="width: 200px;" ondrop='drop(event)' ondragover='allowDrop(event)'>
+					<img src="assets/img/green.png" id='green' style="width: 200px;">
+				</div>
+				<div class="check">
+					<img src="assets/img/check.png" style="width: 200px; height: 50px;" onclick='check()'>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
